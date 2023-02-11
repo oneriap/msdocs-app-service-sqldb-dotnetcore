@@ -22,6 +22,9 @@ jobs:
           dotnet-version: '6.0.x'
           include-prerelease: true
 
+      - name: dotnet install MySql.EntityFrameworkCore
+        run: dotnet add package MySql.EntityFrameworkCore --version 7.0.0
+
       - name: Build with dotnet
         run: dotnet build --configuration Release
 

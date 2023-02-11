@@ -29,7 +29,7 @@ namespace DotNetCoreSqlDb
         {
             services.AddControllersWithViews();
             services.AddDbContext<MyDatabaseContext>(options =>
-                    options.UseMySql(Configuration.GetConnectionString("defaultConnection")));
+                    options.UseMySQL(Configuration.GetConnectionString("defaultConnection")));
             //options.UseSqlServer(Configuration.GetConnectionString("MyDbConnection")));
         }
 
